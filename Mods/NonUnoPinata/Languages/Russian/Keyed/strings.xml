@@ -21,4 +21,5 @@
 	<strip_smeltable>- выгружать расплавляемое снаряжение и предметы одежды</strip_smeltable>
 	<strip_untainted>- выгружать только чистую одежду</strip_untainted>
 	<allow_cremate_nonburnable>- разрешить кремацию несгораемого снаряжения</allow_cremate_nonburnable>
+	<butchered>Разрешить правила раздевания при разделке (autoStripCorpses = true):</butchered>
 </LanguageData>

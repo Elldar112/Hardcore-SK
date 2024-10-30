@@ -14,7 +14,6 @@
 				</categories>
 			</li>
 		</backstoryFilters>
-		<baseRecruitDifficulty>0.40</baseRecruitDifficulty>
 		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
 		<isFighter>true</isFighter>
 		<chemicalAddictionChance>0.15</chemicalAddictionChance>
@@ -100,7 +99,7 @@
 				</primaryMagazineCount>
 				<sidearms>
 					<li>
-						<generateChance>0.2</generateChance>
+						<generateChance>0.15</generateChance>
 						<sidearmMoney>
 							<min>250</min>
 							<max>350</max>
@@ -188,7 +187,7 @@
 				</primaryMagazineCount>
 				<sidearms>
 					<li>
-						<generateChance>0.2</generateChance>
+						<generateChance>0.15</generateChance>
 						<sidearmMoney>
 							<min>250</min>
 							<max>350</max>
@@ -278,7 +277,7 @@
 				</primaryMagazineCount>
 				<sidearms>
 					<li>
-						<generateChance>0.25</generateChance>
+						<generateChance>0.2</generateChance>
 						<sidearmMoney>
 							<min>250</min>
 							<max>350</max>
@@ -367,7 +366,7 @@
 				</primaryMagazineCount>
 				<sidearms>
 					<li>
-						<generateChance>0.25</generateChance>
+						<generateChance>0.2</generateChance>
 						<sidearmMoney>
 							<min>250</min>
 							<max>350</max>
@@ -482,8 +481,8 @@
 			<li>BroadshieldPack</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>Apparel_Backpack</li>
-			<li>Apparel_TacVest</li>
+			<li>CE_Apparel_Backpack</li>
+			<li>CE_Apparel_TacVest</li>
 		</apparelRequired>
 		<initialWillRange>2~4</initialWillRange>
 		<initialResistanceRange>15~24</initialResistanceRange>
@@ -503,7 +502,6 @@
 	<!-- Annihilator -->
 	<PawnKindDef Name="SyndicateAnnihilatorBase" ParentName="SyndicateBase" Abstract="True">
 		<label>Syndicate Annihilator</label>
-		<baseRecruitDifficulty>0.70</baseRecruitDifficulty>
 		<canBeSapper>true</canBeSapper>
 		<combatPower>530</combatPower>
 		<itemQuality>Masterwork</itemQuality>
@@ -550,7 +548,7 @@
 				</primaryMagazineCount>
 				<sidearms>
 					<li>
-						<generateChance>0.3</generateChance>
+						<generateChance>0.25</generateChance>
 						<sidearmMoney>
 							<min>250</min>
 							<max>350</max>

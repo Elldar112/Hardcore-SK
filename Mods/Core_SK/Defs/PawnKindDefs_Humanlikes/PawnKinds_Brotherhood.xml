@@ -14,7 +14,6 @@
 				</categories>
 			</li>
 		</backstoryFilters>
-		<baseRecruitDifficulty>0.45</baseRecruitDifficulty>
 		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
 		<chemicalAddictionChance>0.15</chemicalAddictionChance>
 		<isFighter>true</isFighter>
@@ -89,7 +88,7 @@
 				</primaryMagazineCount>
 				<sidearms>
 					<li>
-						<generateChance>0.3</generateChance>
+						<generateChance>0.2</generateChance>
 						<sidearmMoney>
 							<min>250</min>
 							<max>350</max>
@@ -176,7 +175,7 @@
 				</primaryMagazineCount>
 				<sidearms>
 					<li>
-						<generateChance>0.3</generateChance>
+						<generateChance>0.2</generateChance>
 						<sidearmMoney>
 							<min>250</min>
 							<max>350</max>
@@ -247,7 +246,7 @@
 				</primaryMagazineCount>
 				<sidearms>
 					<li>
-						<generateChance>0.4</generateChance>
+						<generateChance>0.3</generateChance>
 						<sidearmMoney>
 							<min>250</min>
 							<max>350</max>
@@ -318,7 +317,7 @@
 				</primaryMagazineCount>
 				<sidearms>
 					<li>
-						<generateChance>0.35</generateChance>
+						<generateChance>0.25</generateChance>
 						<sidearmMoney>
 							<min>250</min>
 							<max>350</max>
@@ -376,7 +375,7 @@
 				</primaryMagazineCount>
 				<sidearms>
 					<li>
-						<generateChance>0.35</generateChance>
+						<generateChance>0.25</generateChance>
 						<sidearmMoney>
 							<min>250</min>
 							<max>350</max>
@@ -458,7 +457,6 @@
 		<combatPower>370</combatPower>
 		<factionLeader>true</factionLeader>
 		<itemQuality>Masterwork</itemQuality>
-		<baseRecruitDifficulty>0.70</baseRecruitDifficulty>
 		<gearHealthRange>
 			<min>0.7</min>
 			<max>1.6</max>
@@ -495,7 +493,7 @@
 				</primaryMagazineCount>
 				<sidearms>
 					<li>
-						<generateChance>0.3</generateChance>
+						<generateChance>0.2</generateChance>
 						<sidearmMoney>
 							<min>250</min>
 							<max>350</max>

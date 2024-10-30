@@ -316,8 +316,8 @@
     <li>tale_noun->[HUMAN_nameDef]'s taming of [ANIMAL_nameDef]</li>
     <li>image->[HUMAN_nameFull] taming [ANIMAL_nameFull] [circumstance_group]</li>
     <li>image->[HUMAN_nameFull] offering a morsel of food to [ANIMAL_nameFull] [circumstance_group]</li>
-    <li>image->[HUMAN_nameFull] whispering to a skittish [ANIMAL_nameFull] [circumstance_group]</li>
-    <li>image->[HUMAN_nameFull] calming a wild [ANIMAL_nameFull] [circumstance_group]</li>
+    <li>image->[HUMAN_nameFull] whispering to a skittish [ANIMAL_label] [circumstance_group]</li>
+    <li>image->[HUMAN_nameFull] calming a wild [ANIMAL_label] [circumstance_group]</li>
     <li>circumstance_phrase->with great care and caution</li>
     <li>circumstance_phrase->with a smile</li>
     <li>circumstance_phrase->while exhausted but happy</li>
@@ -410,7 +410,7 @@
     <li>image->, как [PAWN_nameFull][circumstance_phrase] отдыхает, прислонившись спиной к забою</li>
     <li>image->, как [PAWN_nameFull][circumstance_phrase] руководит разработкой богатой жилы минерала [MATERIAL_label]</li>
     <li>image->, как [PAWN_nameFull][circumstance_phrase] внимательно осматривает богатую жилу минерала [MATERIAL_label]</li>
-    <li>circumstance_phrase->, покрывшись по́том,</li>
+    <li>circumstance_phrase->, покрывшись потом,</li>
     <li>circumstance_phrase->, имея [AdjectiveFriendly] вид,</li>
     <li>circumstance_phrase->[empty] с гордой улыбкой</li>
     <li>circumstance_phrase->[empty] с удовлетворённым выражением лица</li>

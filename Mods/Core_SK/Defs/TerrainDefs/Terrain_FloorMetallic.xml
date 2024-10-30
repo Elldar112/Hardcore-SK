@@ -6,26 +6,28 @@
 			<WorkToBuild>760</WorkToBuild>
 			<Cleanliness>0.2</Cleanliness>
 			<Beauty>2</Beauty>
+			<CleaningTimeFactor>0.6</CleaningTimeFactor>
 		</statBases>
 		<constructEffect>ConstructMetal</constructEffect>
+		<isPaintable>true</isPaintable>
 		<designationCategory>OutsideFloors</designationCategory>
 		<tags>
-      <li>Floor</li>
-    </tags>
+			<li>Floor</li>
+		</tags>
 	</TerrainDef>
-	
+
 	<TerrainDef ParentName="MetalTileBase">
 		<defName>SilverTile</defName>
 		<label>silver tile</label>
 		<renderPrecedence>241</renderPrecedence>
-		<description>Expensive and slow to build. Soft grey tiles with a grey bordering. 
-Beauty: 8.</description>
+		<description>Expensive and slow to build. Soft grey tiles with a grey bordering.</description>
 		<texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
 		<color>(0.71, 0.68, 0.59)</color>
 		<statBases>
 			<Beauty>8</Beauty>
 			<Cleanliness>0.4</Cleanliness>
 			<WorkToBuild>840</WorkToBuild>
+			<CleaningTimeFactor>0.6</CleaningTimeFactor>
 		</statBases>
 		<costList>
 			<SilverBar>5</SilverBar>
@@ -33,35 +35,39 @@ Beauty: 8.</description>
 		<tags>
 			<li>FineFloor</li>
 		</tags>
-		<researchPrerequisites><li>Metal_floor_C2</li></researchPrerequisites>
+		<researchPrerequisites>
+			<li>Metal_floor_C2</li>
+		</researchPrerequisites>
 	</TerrainDef>
 
 	<TerrainDef ParentName="MetalTileBase">
 		<defName>SterileTile</defName>
 		<label>sterile tile</label>
 		<renderPrecedence>243</renderPrecedence>
-		<description>Sterile tiles are clean, light grey squares. Very useful in hospitals to help prevent infections. Quite slow to build. 
-Beauty: 0.</description>
+		<description>Sterile tiles are clean, light grey squares. Very useful in hospitals to help prevent infections. Quite slow to build.</description>
 		<texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
+		<pollutionTintColor>(0.95, 0.95, 0.93, 1)</pollutionTintColor>
 		<color>(0.71, 0.71, 0.71)</color>
 		<statBases>
-		        <Beauty>3</Beauty>
+			<Beauty>1</Beauty>
 			<Cleanliness>0.6</Cleanliness>
 			<WorkToBuild>900</WorkToBuild>
+			<CleaningTimeFactor>0.6</CleaningTimeFactor>
 		</statBases>
 		<costList>
 			<Ceramics>1</Ceramics>
 			<SilverBar>5</SilverBar>
 		</costList>
-		<researchPrerequisites><li>SterileMaterials</li></researchPrerequisites>
+		<researchPrerequisites>
+			<li>SterileMaterials</li>
+		</researchPrerequisites>
 	</TerrainDef>
 
 	<TerrainDef ParentName="MetalTileBase">
 		<defName>TinTile</defName>
 		<label>white tin tile</label>
 		<renderPrecedence>240</renderPrecedence>
-		<description>White tin square tiles. 
-Beauty: 3.</description>
+		<description>White tin square tiles.</description>
 		<texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
 		<color>(0.86, 0.86, 0.86)</color>
 		<statBases>
@@ -71,15 +77,16 @@ Beauty: 3.</description>
 		<costList>
 			<TinBar>3</TinBar>
 		</costList>
-		<researchPrerequisites><li>Metal_floor_B1</li></researchPrerequisites>
+		<researchPrerequisites>
+			<li>Metal_floor_B1</li>
+		</researchPrerequisites>
 	</TerrainDef>
 
 	<TerrainDef ParentName="MetalTileBase">
 		<defName>CopperTile</defName>
 		<label>simple copper tile</label>
 		<renderPrecedence>240</renderPrecedence>
-		<description>Simple copper square tiles. 
-Beauty: 3.</description>
+		<description>Simple copper square tiles.</description>
 		<texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
 		<color>(0.62, 0.45, 0.17)</color>
 		<statBases>
@@ -89,15 +96,16 @@ Beauty: 3.</description>
 		<costList>
 			<CopperBar>3</CopperBar>
 		</costList>
-		<researchPrerequisites><li>Metal_floor_B1</li></researchPrerequisites>
+		<researchPrerequisites>
+			<li>Metal_floor_B1</li>
+		</researchPrerequisites>
 	</TerrainDef>
 
 	<TerrainDef ParentName="MetalTileBase">
 		<defName>MetalTile</defName>
 		<label>grey metal tile</label>
 		<renderPrecedence>240</renderPrecedence>
-		<description>Grey metal square tiles, for that spaceship look. 
-Beauty: 4.</description>
+		<description>Grey metal square tiles, for that spaceship look.</description>
 		<texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
 		<color>(0.54, 0.52, 0.53)</color>
 		<statBases>
@@ -106,15 +114,16 @@ Beauty: 4.</description>
 		<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
-		<researchPrerequisites><li>Metal_floor_B1</li></researchPrerequisites>
+		<researchPrerequisites>
+			<li>Metal_floor_B1</li>
+		</researchPrerequisites>
 	</TerrainDef>
 
 	<TerrainDef  ParentName="MetalTileBase">
 		<defName>MetalTileTwo</defName>
 		<label>black metal tile</label>
 		<renderPrecedence>240</renderPrecedence>
-		<description>Black metal square tiles, for that spaceship look. 
-Beauty: 4.</description>
+		<description>Black metal square tiles, for that spaceship look.</description>
 		<texturePath>Terrain/Surfaces/MetalTileTwo</texturePath>
 		<statBases>
 			<Beauty>4</Beauty>
@@ -122,15 +131,16 @@ Beauty: 4.</description>
 		<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
-		<researchPrerequisites><li>Metal_floor_B2</li></researchPrerequisites>
+		<researchPrerequisites>
+			<li>Metal_floor_B2</li>
+		</researchPrerequisites>
 	</TerrainDef>
 
 	<TerrainDef  ParentName="MetalTileBase">
 		<defName>MetalTileThree</defName>
 		<label>grey metal tile</label>
 		<renderPrecedence>240</renderPrecedence>
-		<description>Square grey metal tiles with thin borders. 
-Beauty: 4.</description>
+		<description>Square grey metal tiles with thin borders.</description>
 		<texturePath>Terrain/Surfaces/MetalTileThree</texturePath>
 		<statBases>
 			<Beauty>4</Beauty>
@@ -138,15 +148,16 @@ Beauty: 4.</description>
 		<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
-		<researchPrerequisites><li>Metal_floor_B2</li></researchPrerequisites>
+		<researchPrerequisites>
+			<li>Metal_floor_B2</li>
+		</researchPrerequisites>
 	</TerrainDef>
 
 	<TerrainDef  ParentName="MetalTileBase">
 		<defName>MetalTileFour</defName>
 		<label>patterned metal tile</label>
 		<renderPrecedence>240</renderPrecedence>
-		<description>Grey metal tiles with fancy patterns. 
-Beauty: 4.</description>
+		<description>Grey metal tiles with fancy patterns.</description>
 		<texturePath>Terrain/Surfaces/MetalTileFour</texturePath>
 		<statBases>
 			<Beauty>4</Beauty>
@@ -154,17 +165,140 @@ Beauty: 4.</description>
 		<costList>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
-		<researchPrerequisites><li>Metal_floor_B2</li></researchPrerequisites>
+		<researchPrerequisites>
+			<li>Metal_floor_B2</li>
+		</researchPrerequisites>
 	</TerrainDef>
-	
+
+	<!-- ============ Aluminium Tile ============ -->
+
+	<TerrainDef ParentName="MetalTileBase">
+		<defName>AluminiumTile</defName>
+		<label>simple aluminium tile</label>
+		<renderPrecedence>240</renderPrecedence>
+		<description>Simple aluminium square tiles.</description>
+		<texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
+		<color>(190,205,190)</color>
+		<statBases>
+			<WorkToBuild>816</WorkToBuild>
+			<Beauty>3</Beauty>
+			<Cleanliness>0.3</Cleanliness>
+			<CleaningTimeFactor>0.55</CleaningTimeFactor>
+			<FilthMultiplier>0.9</FilthMultiplier>
+		</statBases>
+		<costList>
+			<AluminiumBar>4</AluminiumBar>
+		</costList>
+		<researchPrerequisites>
+			<li>Metal_floor_C1</li>
+		</researchPrerequisites>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+	</TerrainDef>
+
+	<!-- ============ Cupronickel (melchior) Tile ============ -->
+
+	<TerrainDef ParentName="MetalTileBase">
+		<defName>CupronickelTile</defName>
+		<label>simple melchior tile</label>
+		<renderPrecedence>240</renderPrecedence>
+		<description>Simple melchior square tiles.</description>
+		<texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
+		<color>(168,157,125)</color>
+		<statBases>
+			<WorkToBuild>2040</WorkToBuild>
+			<Beauty>4</Beauty>
+			<Cleanliness>0.3</Cleanliness>
+			<CleaningTimeFactor>0.55</CleaningTimeFactor>
+			<FilthMultiplier>0.9</FilthMultiplier>
+		</statBases>
+		<costList>
+			<CupronickelAlloy>4</CupronickelAlloy>
+		</costList>
+		<researchPrerequisites>
+			<li>Metal_floor_C1</li>
+		</researchPrerequisites>
+	</TerrainDef>
+
+	<!-- ============ Stein Tile ============ -->
+
+	<TerrainDef ParentName="MetalTileBase">
+		<defName>SteinTile</defName>
+		<label>simple stein tile</label>
+		<renderPrecedence>240</renderPrecedence>
+		<description>Simple stein square tiles.</description>
+		<texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
+		<color>(130,157,141)</color>
+		<statBases>
+			<WorkToBuild>3060</WorkToBuild>
+			<Beauty>5</Beauty>
+			<Cleanliness>0.3</Cleanliness>
+			<CleaningTimeFactor>0.55</CleaningTimeFactor>
+			<FilthMultiplier>0.9</FilthMultiplier>
+		</statBases>
+		<costList>
+			<SteelBar>4</SteelBar>
+		</costList>
+		<researchPrerequisites>
+			<li>Metal_floor_C1</li>
+		</researchPrerequisites>
+	</TerrainDef>
+
+	<!-- ============ Titanium Tile ============ -->
+
+	<TerrainDef ParentName="MetalTileBase">
+		<defName>TitaniumTile</defName>
+		<label>simple titanium tile</label>
+		<renderPrecedence>240</renderPrecedence>
+		<description>Simple titanium square tiles.</description>
+		<texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
+		<color>(160,178,181)</color>
+		<statBases>
+			<WorkToBuild>4080</WorkToBuild>
+			<Beauty>8</Beauty>
+			<Cleanliness>0.4</Cleanliness>
+			<CleaningTimeFactor>0.5</CleaningTimeFactor>
+			<FilthMultiplier>0.8</FilthMultiplier>
+		</statBases>
+		<costList>
+			<Titanium>4</Titanium>
+		</costList>
+		<researchPrerequisites>
+			<li>Metal_floor_D1</li>
+		</researchPrerequisites>
+	</TerrainDef>
+
+	<!-- ============ Beta Poly Tile ============ -->
+
+	<TerrainDef ParentName="MetalTileBase">
+		<defName>BetaPolyTile</defName>
+		<label>simple beta poly tile</label>
+		<renderPrecedence>240</renderPrecedence>
+		<description>Simple beta poly square tiles.</description>
+		<texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
+		<color>(100,60,60)</color>
+		<statBases>
+			<WorkToBuild>5090</WorkToBuild>
+			<Beauty>11</Beauty>
+			<Cleanliness>0.55</Cleanliness>
+			<CleaningTimeFactor>0.4</CleaningTimeFactor>
+			<FilthMultiplier>0.6</FilthMultiplier>
+		</statBases>
+		<costList>
+			<BetaPoly>4</BetaPoly>
+		</costList>
+		<researchPrerequisites>
+			<li>Metal_floor_D1</li>
+		</researchPrerequisites>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+	</TerrainDef>
+
 	<!-- ============ Gold Tile ============ -->
 
 	<TerrainDef  ParentName="MetalTileBase">
 		<defName>GoldTile</defName>
 		<label>gold tile</label>
 		<renderPrecedence>240</renderPrecedence>
-		<description>Gold tiles, because you're worth it. 
-Beauty: 5.</description>
+		<description>Gold tiles, because you're worth it.</description>
 		<texturePath>Terrain/Surfaces/GoldTile</texturePath>
 		<statBases>
 			<Beauty>12</Beauty>
@@ -174,18 +308,19 @@ Beauty: 5.</description>
 		<costList>
 			<GoldBar>5</GoldBar>
 		</costList>
-	<tags>
-      <li>FineFloor</li>
-    </tags>
-		<researchPrerequisites><li>Metal_floor_C2</li></researchPrerequisites>
+		<tags>
+			<li>FineFloor</li>
+		</tags>
+		<researchPrerequisites>
+			<li>Metal_floor_C2</li>
+		</researchPrerequisites>
 	</TerrainDef>
 
 	<TerrainDef  ParentName="SK_FloorBase">
 		<defName>GoldSolid</defName>
 		<label>solid gold</label>
 		<renderPrecedence>240</renderPrecedence>
-		<description>Solid gold, because you're wasteful.
-Beauty: 10.</description>
+		<description>Solid gold, because you're wasteful.</description>
 		<texturePath>Terrain/Surfaces/GoldSolid</texturePath>
 		<statBases>
 			<Beauty>20</Beauty>
@@ -195,18 +330,22 @@ Beauty: 10.</description>
 		<costList>
 			<GoldBar>10</GoldBar>
 		</costList>
-		<researchPrerequisites><li>Metal_floor_C2</li></researchPrerequisites>
+		<researchPrerequisites>
+			<li>Metal_floor_C2</li>
+		</researchPrerequisites>
 	</TerrainDef>
-	
+
 
 	<TerrainDef Name="MetalPlateBase" ParentName="MetalTileBase" Abstract="True">
 		<renderPrecedence>222</renderPrecedence>
-		<description>Metal plates complete with rivets for an industrial look. Time-consuming to make, but easy to keep clean. Beauty: 2.</description>
+		<description>Metal plates complete with rivets for an industrial look. Time-consuming to make, but easy to keep clean.</description>
 		<texturePath>Terrain/Surfaces/MetalPlate</texturePath>
 		<statBases>
 			<WorkToBuild>760</WorkToBuild>
 		</statBases>
-		<researchPrerequisites><li>Metal_floor_B1</li></researchPrerequisites>
+		<researchPrerequisites>
+			<li>Metal_floor_B1</li>
+		</researchPrerequisites>
 	</TerrainDef>
 
 	<TerrainDef ParentName="MetalPlateBase">
@@ -259,5 +398,3 @@ Beauty: 10.</description>
 	</TerrainDef>
 
 </Defs>
-
-

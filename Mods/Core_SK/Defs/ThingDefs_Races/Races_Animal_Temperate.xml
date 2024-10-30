@@ -40,7 +40,7 @@
 			</li>
 			<li Class="CombatExtended.ToolCE">
 				<capacities>
-					<li>BiteBlunt</li>
+					<li>Bite</li>
 				</capacities>
 				<power>3</power>
 				<cooldownTime>1.6</cooldownTime>
@@ -438,7 +438,7 @@
 			</li>
 			<li Class="CombatExtended.ToolCE">
 				<capacities>
-					<li>BiteBlunt</li>
+					<li>Bite</li>
 				</capacities>
 				<power>8</power>
 				<cooldownTime>1.7</cooldownTime>
@@ -643,7 +643,7 @@
 			</li>
 			<li Class="CombatExtended.ToolCE">
 				<capacities>
-					<li>BiteBlunt</li>
+					<li>Bite</li>
 				</capacities>
 				<power>7</power>
 				<cooldownTime>1.6</cooldownTime>
@@ -787,6 +787,8 @@
 			<ImmunityGainSpeed>1.1</ImmunityGainSpeed>
 			<MeleeDodgeChance>0.12</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1</ArmorRating_Blunt>
 			<FilthRate>16</FilthRate>
 		</statBases>
 		<tools>
@@ -849,7 +851,7 @@
 			<wildness>0.45</wildness>
 			<roamMtbDays>2</roamMtbDays>
 			<manhunterOnDamageChance>0.35</manhunterOnDamageChance>
-			<trainability>None</trainability>
+			<trainability>Intermediate</trainability>
 			<manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
 			<gestationPeriodDays>5.661</gestationPeriodDays>
 			<litterSizeCurve>
@@ -882,6 +884,15 @@
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<trainableTags>
+				<li>Basic</li>
+				<li>Combat</li>
+			</trainableTags>
+			<untrainableTags>
+				<li>HuntingTraining</li>
+				<li>Help</li>
+				<li>Work</li>
+			</untrainableTags>
 		</race>
 		<tradeTags>
 			<li>AnimalCommon</li>

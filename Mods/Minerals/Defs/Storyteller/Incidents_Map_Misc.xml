@@ -26,7 +26,7 @@
       <li>Map_PlayerHome</li>
     </targetTags>
     <workerClass>Minerals.IncidentWorker_NoticeMineral</workerClass>
-    <baseChance>3</baseChance>
+    <baseChance>1</baseChance>
     <minRefireDays>20</minRefireDays>
     <letterLabel>Noticed minerals</letterLabel>
     <letterText>Your miner {0} noticed a patch of {1} nearby.</letterText>
@@ -47,7 +47,7 @@
     <letterText>A massive stormfront is approching. It has a strange blue hue. Unless the temperature increases, such storms can last for many days.</letterText>
     <letterDef>NeutralEvent</letterDef>
     <baseChance>6</baseChance>
-    <minRefireDays>90</minRefireDays>
+    <minRefireDays>120</minRefireDays>
     <durationDays>
       <min>3</min>
       <max>10</max>
@@ -60,6 +60,8 @@
     <conditionClass>Minerals.GameCondition_BlueSnow</conditionClass>
     <label>blue snow</label>
     <description>The sky is thick with snow. The snow has a slight blue tint. Unless the temperature increases, such storms can last for many days.</description>
+    <letterText>A massive stormfront is approching. It has a strange blue hue. Unless the temperature increases, such storms can last for many days.</letterText>
+    <letterDef>NeutralEvent</letterDef>
     <endMessage>The snow is beginning to thin.</endMessage>
   </GameConditionDef>
         

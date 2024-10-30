@@ -1,11 +1,37 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/DamageDef[defName="Bomb"]/buildingDamageFactorImpassable</xpath>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/DamageDef[@Name="PlasmaDamageBase"]/buildingDamageFactor</xpath>
+		<value>
+			<buildingDamageFactor>2.3</buildingDamageFactor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/DamageDef[defName="Thermobaric"]/buildingDamageFactorImpassable</xpath>
+		<value>
+			<buildingDamageFactorImpassable>2.15</buildingDamageFactorImpassable>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/DamageDef[defName="Thermobaric"]/buildingDamageFactorPassable</xpath>
+		<value>
+			<buildingDamageFactorPassable>2.15</buildingDamageFactorPassable>
+		</value>
+	</Operation>
+	<!-- I am not sure why we added this, but the details seem better, and passable is already 2
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/DamageDef[defName="Bomb"]</xpath>
         <value>
-            <buildingDamageFactorImpassable>2</buildingDamageFactorImpassable>
+            <buildingDamageFactorImpassable>2.0</buildingDamageFactorImpassable>
         </value>
     </Operation>
-
+    <Operation Class="SK.PatchOperationReplaceExtended">
+        <xpath>Defs/DamageDef[defName="Bomb"]</xpath>
+        <value>
+            <buildingDamageFactorPassable>2.0</buildingDamageFactorPassable>
+        </value>
+    </Operation>
+	-->
 </Patch>

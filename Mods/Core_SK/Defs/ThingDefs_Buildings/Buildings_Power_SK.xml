@@ -747,6 +747,7 @@
 		<rotatable>true</rotatable>
 		<canOverlapZones>false</canOverlapZones>
 		<designationCategory>Power</designationCategory>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<building>
 			<allowAutoroof>false</allowAutoroof>
 			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
@@ -770,11 +771,17 @@
 				<transmitsPower>true</transmitsPower>
 			</li>
 			<li Class="CompProperties_Breakdownable"/>
+			<li>
+				<compClass>CompAutoCutWindTurbine</compClass>
+			</li>
 		</comps>
 		<researchPrerequisites>
 			<li>Renewable_energy_C2</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+		<inspectorTabs>
+			<li>ITab_WindTurbineAutoCut</li>
+		</inspectorTabs>
 	</ThingDef>
 
 	<ThingDef ParentName="StandartBuilding">
@@ -807,6 +814,7 @@
 		<size>(5,2)</size>
 		<canOverlapZones>false</canOverlapZones>
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<rotatable>true</rotatable>
 		<designationCategory>Power</designationCategory>
 		<building>
@@ -832,11 +840,17 @@
 				<transmitsPower>true</transmitsPower>
 			</li>
 			<li Class="CompProperties_Breakdownable"/>
+			<li>
+				<compClass>CompAutoCutWindTurbine</compClass>
+			</li>
 		</comps>
 		<researchPrerequisites>
 			<li>Renewable_energy_D2</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>14</constructionSkillPrerequisite>
+		<inspectorTabs>
+			<li>ITab_WindTurbineAutoCut</li>
+		</inspectorTabs>
 	</ThingDef>
 
 	<!-- 
@@ -976,7 +990,7 @@ Power output: around 750 W.</description>
 			</li>
 		</modExtensions>
 	</ThingDef>
-<!--
+	<!--
 	<ThingDef ParentName="PowerFueled">
 		<defName>BioGenerator</defName>
 		<label>bio-generator</label>
@@ -1404,7 +1418,7 @@ Power output: 2,500 W.</description>
 			<Beauty>-5</Beauty>
 		</statBases>
 		<tickerType>Rare</tickerType>
-		<description>Produces electricity from differences in temperatures between two rooms. Should be placed in a wall. Example: At 1,600 C (2,912 F) difference, power output is 16,200 W at 600% efficiency.</description>
+		<description>Produces electricity from differences in temperatures between two rooms. Should be placed in a wall. Example: At 1,600 C (2,912 F) difference, power output is 16,200 W at 600% efficiency. \n\nCan withstand up to 350 celsius and down to -150 celsius.\n\nCan be overestressed in extreme temperatures giving it a chance to be damaged or a slim chance to break down.</description>
 		<size>(1,1)</size>
 		<stuffCategories>
 			<li>StrongMetallic</li>
@@ -1424,12 +1438,21 @@ Power output: 2,500 W.</description>
 			</li>
 			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Flickable" />
+			<li Class="SK.CompProperties_RestrictedPlacement">
+				<compClass>SK.CompRestrictedPlacement</compClass>
+				<thingDefs>
+					<li>Wall</li>
+					<li>ClutterSilverWall</li>
+					<li>ClutterUWallLight</li>
+				</thingDefs>
+			</li>
 		</comps>
 		<rotatable>true</rotatable>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<designationCategory>Power</designationCategory>
 		<placeWorkers>
 			<li>PlaceWorker_vent</li>
+			<li>SK.PlaceWorker_OnlyOnThing</li>
 		</placeWorkers>
 		<building>
 			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
@@ -1437,6 +1460,9 @@ Power output: 2,500 W.</description>
 			<isEdifice>false</isEdifice>
 		</building>
 		<canOverlapZones>false</canOverlapZones>
+		<coversFloor>true</coversFloor>
+		<blockLight>true</blockLight>
+		<castEdgeShadows>true</castEdgeShadows>
 		<researchPrerequisites>
 			<li>Renewable_energy_D2</li>
 		</researchPrerequisites>
@@ -1601,6 +1627,7 @@ Power output: 2,500 W.</description>
 		<size>(5,5)</size>
 		<rotatable>false</rotatable>
 		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<designationCategory>Power</designationCategory>
 		<building>
 			<allowAutoroof>false</allowAutoroof>
@@ -1788,6 +1815,7 @@ Power output: 2,500 W.</description>
 		</comps>
 		<rotatable>false</rotatable>
 		<designationCategory>Power</designationCategory>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<placeWorkers>
 			<li>SK.PlaceWorker_OnlyOnThing</li>
 			<li>SK.PlaceWorker_NoNearPlasmaGeothermalPlant</li>
@@ -1945,6 +1973,7 @@ Power output: 2,500 W.</description>
 	<ThingDef ParentName="PowerFueled">
 		<defName>AntimatterReactor</defName>
 		<label>antimatter reactor</label>
+		<description>The contained antimatter separates from normal matter by magnetic fields so that no unintended reactions take place. The energy would then be extracted in much the same way that nuclear reactors capture the expended heat and light energy from fission reactions. Power output: 32,000 W.</description>
 		<thingClass>SK.Building_AntimatterReactor</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
@@ -1962,7 +1991,7 @@ Power output: 2,500 W.</description>
 			<Beauty>-120</Beauty>
 		</statBases>
 		<rotatable>false</rotatable>
-		<description>The contained antimatter separates from normal matter by magnetic fields so that no unintended reactions take place. The energy would then be extracted in much the same way that nuclear reactors capture the expended heat and light energy from fission reactions. Power output: 32,000 W.</description>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<size>(6,6)</size>
 		<stuffCategories>
 			<li>SolidMetallic</li>

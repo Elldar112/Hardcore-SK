@@ -48,6 +48,8 @@
 		</equippedStatOffsets>
 		<generateCommonality>1</generateCommonality>
 		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
@@ -73,9 +75,9 @@
 		<thingCategories>
 			<li>HeaddressCat</li>
 		</thingCategories>
-        <recipeMaker>
-            <researchPrerequisite>Apparel_B3</researchPrerequisite>
-        </recipeMaker>
+		<recipeMaker>
+			<researchPrerequisite>Apparel_B3</researchPrerequisite>
+		</recipeMaker>
 	</ThingDef>
 
 	<ThingDef ParentName="ApparelMedievalBase">
@@ -125,6 +127,7 @@
 		</equippedStatOffsets>
 		<generateCommonality>1.5</generateCommonality>
 		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
@@ -146,9 +149,9 @@
 		<thingCategories>
 			<li>HeaddressCat</li>
 		</thingCategories>
-        <recipeMaker>
-            <researchPrerequisite>Apparel_B3</researchPrerequisite>
-        </recipeMaker>
+		<recipeMaker>
+			<researchPrerequisite>Apparel_B3</researchPrerequisite>
+		</recipeMaker>
 	</ThingDef>
 
 
@@ -200,6 +203,7 @@
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<wornGraphicPath>Things/Apparel/NorbalHelmet/NorbalSkullcap</wornGraphicPath>
 			<layers>
 				<li>Overhead</li>
@@ -265,6 +269,8 @@
 		</equippedStatOffsets>
 		<generateCommonality>1</generateCommonality>
 		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
@@ -285,9 +291,9 @@
 		<thingCategories>
 			<li>HeaddressCat</li>
 		</thingCategories>
-        <recipeMaker>
-            <researchPrerequisite>PlateArmor</researchPrerequisite>
-        </recipeMaker>
+		<recipeMaker>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+		</recipeMaker>
 	</ThingDef>
 
 
@@ -335,8 +341,11 @@
 		</equippedStatOffsets>
 		<generateCommonality>1</generateCommonality>
 		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			<bodyPartGroups>
 				<li>FullHead</li>
+				<li>Neck</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Apparel/NorbalHelmet/NorbalChain</wornGraphicPath>
 			<layers>
@@ -355,9 +364,9 @@
 			<li>HeaddressCat</li>
 			<li>SetMedieval</li>	
 		</thingCategories>
-        <recipeMaker>
-            <researchPrerequisite>Armor_B2</researchPrerequisite>
-        </recipeMaker>
+		<recipeMaker>
+			<researchPrerequisite>Armor_B2</researchPrerequisite>
+		</recipeMaker>
 	</ThingDef>
 
 	<ThingDef ParentName="ArmorMedievalBase">
@@ -398,6 +407,8 @@
 		</equippedStatOffsets>
 		<generateCommonality>1</generateCommonality>
 		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			<bodyPartGroups>
 				<li>FullHead</li>
 			</bodyPartGroups>
@@ -433,9 +444,9 @@
 			<li>HeaddressCat</li>
 			<li>SetMedieval</li>	
 		</thingCategories>
-        <recipeMaker>
-            <researchPrerequisite>Armor_B2</researchPrerequisite>
-        </recipeMaker>
+		<recipeMaker>
+			<researchPrerequisite>Armor_B2</researchPrerequisite>
+		</recipeMaker>
 	</ThingDef>
 
 	<ThingDef ParentName="ArmorMedievalSimpleBase">
@@ -483,8 +494,12 @@
 		</equippedStatOffsets>
 		<generateCommonality>1</generateCommonality>
 		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			<bodyPartGroups>
 				<li>UpperHead</li>
+				<li>Teeth</li>
+				<li>Neck</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Apparel/MedievalTimes/Headwear_Armor/Domed/MedievalTimes_Helmet_Domed</wornGraphicPath>
 			<layers>
@@ -511,9 +526,9 @@
 			<li>HeaddressCat</li>
 			<li>SetMedieval</li>
 		</thingCategories>
-        <recipeMaker>
-            <researchPrerequisite>PlateArmor</researchPrerequisite>
-        </recipeMaker>
+		<recipeMaker>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+		</recipeMaker>
 	</ThingDef>
 
 	<ThingDef ParentName="ArmorMedievalSimpleBase">
@@ -553,8 +568,11 @@
 		</equippedStatOffsets>
 		<generateCommonality>1</generateCommonality>
 		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			<bodyPartGroups>
 				<li>FullHead</li>
+				<li>Neck</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Apparel/MedievalTimes/Headwear_Armor/Sallet/MedievalTimes_Helmet_Sallet</wornGraphicPath>
 			<layers>
@@ -581,9 +599,9 @@
 			<li>HeaddressCat</li>
 			<li>SetMedieval</li>
 		</thingCategories>
-        <recipeMaker>
-            <researchPrerequisite>Armor_B2</researchPrerequisite>
-        </recipeMaker>
+		<recipeMaker>
+			<researchPrerequisite>Armor_B2</researchPrerequisite>
+		</recipeMaker>
 	</ThingDef>
 
 </Defs>

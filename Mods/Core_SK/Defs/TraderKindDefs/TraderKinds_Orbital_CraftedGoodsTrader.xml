@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<!--========================= Manufactured Goods Trader =============================-->
@@ -155,7 +155,14 @@
 			<li Class="StockGenerator_ReinforcedBarrels">
 				<countRange>5~10</countRange>
 			</li>
-			<!--<li Class="StockGenerator_BuyWeirdOrganic" />-->
+			<!-- Genepacks -->
+			<li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+				<thingDef>Genepack</thingDef>
+				<countRange>1~2</countRange>
+			</li>
+
+			<!-- Books -->
+      <!-- none -->
 		</stockGenerators>
 	</TraderKindDef>
 

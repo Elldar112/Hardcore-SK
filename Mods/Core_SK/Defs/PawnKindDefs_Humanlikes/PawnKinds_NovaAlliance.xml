@@ -13,7 +13,6 @@
 				</categories>
 			</li>
 		</backstoryFilters>
-		<baseRecruitDifficulty>0.55</baseRecruitDifficulty>
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
 		<invNutrition>2</invNutrition>
 		<invFoodDef>MealNutrientPaste</invFoodDef>
@@ -112,7 +111,7 @@
 				</primaryMagazineCount>
 				<sidearms>
 					<li>
-						<generateChance>0.25</generateChance>
+						<generateChance>0.2</generateChance>
 						<sidearmMoney>
 							<min>50</min>
 							<max>100</max>
@@ -164,7 +163,7 @@
 				</primaryMagazineCount>
 				<sidearms>
 					<li>
-						<generateChance>0.25</generateChance>
+						<generateChance>0.2</generateChance>
 						<sidearmMoney>
 							<min>50</min>
 							<max>100</max>
@@ -221,7 +220,7 @@
 				</primaryMagazineCount>
 				<sidearms>
 					<li>
-						<generateChance>0.3</generateChance>
+						<generateChance>0.25</generateChance>
 						<sidearmMoney>
 							<min>50</min>
 							<max>100</max>
@@ -300,7 +299,6 @@
 		<factionLeader>true</factionLeader>
 		<itemQuality>Masterwork</itemQuality>
 		<canBeSapper>true</canBeSapper>
-		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
 		<combatPower>440</combatPower>
 		<maxGenerationAge>55</maxGenerationAge>
 		<gearHealthRange>
@@ -348,7 +346,7 @@
 				</primaryMagazineCount>
 				<sidearms>
 					<li>
-						<generateChance>0.3</generateChance>
+						<generateChance>0.25</generateChance>
 						<sidearmMoney>
 							<min>50</min>
 							<max>100</max>
