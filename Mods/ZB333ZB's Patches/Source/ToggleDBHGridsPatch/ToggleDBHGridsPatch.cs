@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using DubsBadHygiene;
 using HarmonyLib;
@@ -16,21 +15,28 @@ namespace ToggleDBHGridsPatch
         static HarmonyPatcher()
         {
             new Harmony("com.ZB333ZB.ToggleDBHGridsPatch").PatchAll();
+
+            // Add debug logging
+            var deepWaterResearch = DefDatabase<ResearchProjectDef>.GetNamed(ModSettingsLoader.Settings.deepWaterResearchDefName, false);
+            if (deepWaterResearch == null)
+            {
+                Log.Error($"[ToggleDBHGridsPatch] Could not find research project with defName: {ModSettingsLoader.Settings.deepWaterResearchDefName}");
+            }
         }
     }
 
-    public class ModSettings : Def
+    public class ToggleDBHGridsPatchDef : Def
     {
         public string deepWaterResearchDefName;
     }
 
     public static class ModSettingsLoader
     {
-        public static ModSettings Settings { get; private set; }
+        public static ToggleDBHGridsPatchDef Settings { get; private set; }
 
         static ModSettingsLoader()
         {
-            Settings = DefDatabase<ModSettings>.GetNamed("ToggleDBHGridsPatchSettings");
+            Settings = DefDatabase<ToggleDBHGridsPatchDef>.GetNamed("ToggleDBHGridsPatch");
         }
     }
 
@@ -47,7 +53,7 @@ namespace ToggleDBHGridsPatch
     {
         public bool IsActive { get; set; }
         public void DrawGrid() => GridDrawer.DrawWaterSewageGrid();
-        public bool IsResearchCompleted() => true; // Always available
+        public bool IsResearchCompleted() => true;
         public string GetResearchMessage() => string.Empty;
         public string GetOptionLabel() => "WaterAndSewageGridOption".Translate();
     }
@@ -56,14 +62,23 @@ namespace ToggleDBHGridsPatch
     {
         public bool IsActive { get; set; }
         public void DrawGrid() => GridDrawer.DrawDeepWaterGrid();
-        public bool IsResearchCompleted() => DefDatabase<ResearchProjectDef>.GetNamed(ModSettingsLoader.Settings.deepWaterResearchDefName).IsFinished;
+        public bool IsResearchCompleted()
+        {
+            var research = DefDatabase<ResearchProjectDef>.GetNamed(ModSettingsLoader.Settings.deepWaterResearchDefName, false);
+            if (research == null)
+            {
+                Log.Warning($"[ToggleDBHGridsPatch] Research check failed - could not find: {ModSettingsLoader.Settings.deepWaterResearchDefName}");
+                return false;
+            }
+            return research.IsFinished;
+        }
         public string GetResearchMessage() => "DeepWaterResearchMessage".Translate(DefDatabase<ResearchProjectDef>.GetNamed(ModSettingsLoader.Settings.deepWaterResearchDefName).label);
         public string GetOptionLabel() => "DeepWaterGridOption".Translate();
     }
 
     public static class GridManager
     {
-        private static readonly List<IGridStrategy> _strategies = new List<IGridStrategy>
+        private static readonly List<IGridStrategy> _strategies = new()
         {
             new WaterAndSewageGridStrategy(),
             new DeepWaterGridStrategy()
@@ -177,7 +192,7 @@ namespace ToggleDBHGridsPatch
         {
             var waterAndSewageStrategy = GridManager.GetStrategies().OfType<WaterAndSewageGridStrategy>().FirstOrDefault();
             if (waterAndSewageStrategy?.IsActive != true) return true;
-            
+
             GridDrawer.DrawWaterSewageGrid();
             return false;
         }
@@ -190,7 +205,7 @@ namespace ToggleDBHGridsPatch
         {
             var deepWaterStrategy = GridManager.GetStrategies().OfType<DeepWaterGridStrategy>().FirstOrDefault();
             if (deepWaterStrategy?.IsActive != true) return true;
-            
+
             GridDrawer.DrawDeepWaterGrid();
             return false;
         }
